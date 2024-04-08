@@ -1,0 +1,15 @@
+[package]
+name = "helloworld"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+abi_stable = "0.11.3"
+
+[lib]
+name = "helloworld"
+crate-type = ["cdylib",'rlib']
+
+[dependencies.interface]
+path = "../interface" 
+features = ["impls"]
