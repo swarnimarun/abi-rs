@@ -44,8 +44,8 @@ pub struct ExampleLib {
 impl RootModule for ExampleLib_Ref {
     abi_stable::declare_root_module_statics! {ExampleLib_Ref}
 
-    const BASE_NAME: &'static str = "example_library";
-    const NAME: &'static str = "example_library";
+    const BASE_NAME: &'static str = "helloworld";
+    const NAME: &'static str = "helloworld";
     const VERSION_STRINGS: VersionStrings = package_version_strings!();
 }
 

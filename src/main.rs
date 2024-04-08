@@ -16,6 +16,7 @@ fn main() {
     if let Some(path) = app.path {
         // compile
         let output = std::process::Command::new("cargo")
+            .current_dir(&path)
             .arg("build")
             .arg("--release")
             .output();
